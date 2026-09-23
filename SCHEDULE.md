@@ -1,14 +1,22 @@
 # Hands-On Session Schedule
 
-The hands-on session lasts about **3 hours**. Times are given relative to the start of the session; the instructor announces the actual start time on the day. Break timing may be adjusted.
+The OpenPyTEA hands-on session (Panji B. Tamarona) runs on **Friday, November 6, 2026** in **Lecture Hall B - Isaac Newton**, Faculty of Mechanical Engineering, TU Delft (directions in the [README](README.md#venue-and-directions)). It takes place in two blocks around lunch:
 
-The morning lectures (process design, TEA fundamentals, OpenPyTEA design and capabilities) are not part of this repository. The session assumes you have heard them, but every notebook restates the concepts it needs.
+| Block | Time | Duration |
+|---|---|---|
+| Block 1 | 11:45 - 12:30 | 45 min |
+| Lunch | 12:30 - 13:30 | |
+| Block 2 | 13:30 - 14:45 | 75 min |
+
+The other sessions of the day (process design, TEA fundamentals, the industry talk by Shell, and the community discussion) are not part of this repository. For the full-day program, see https://www.aanmelder.nl/openpytea2026.
+
+The session consists of six exercises, one notebook each. The exercise number is the notebook number. Inside a notebook, tasks are numbered per exercise (Task 1.1, Task 1.2, ...). Tasks marked **bonus** are for participants who finish early. Every task has a solution in the notebook, so nobody gets stuck.
 
 ## Before the session
 
-Complete:
-- [INSTRUCTIONS.md](INSTRUCTIONS.md)
-- [notebooks/00_setup_check.ipynb](notebooks/00_setup_check.ipynb)
+Complete at home:
+- [INSTRUCTIONS.md](INSTRUCTIONS.md): installation, about 15 minutes
+- [notebooks/00_setup_check.ipynb](notebooks/00_setup_check.ipynb): every check should print `OK`
 - Optionally, the [reading material](READING_MATERIAL.md)
 
 ## How to open the notebooks
@@ -35,37 +43,41 @@ jupyter lab
 
 Alternatively, open the notebook in Google Colab via the badge at the top of each notebook.
 
-## Session plan
+## Block 1 (11:45 - 12:30)
 
-### 0:00 - 0:15 Welcome and setup check
-Roadmap of the session, troubleshooting of installations, a five-minute tour of the notebook layout.
-- [00_setup_check.ipynb](notebooks/00_setup_check.ipynb)
+### 11:45 - 11:55 Why OpenPyTEA? (presentation, 10 min)
+Why we built an open-source TEA toolkit, what it does, and how it fits into the TEA workflow.
 
-### 0:15 - 0:40 Equipment costing
-Cost correlations, inflation adjustment with CEPCI, material and installation factors, vendor quotes, composite equipment.
-- [01_equipment_costing.ipynb](notebooks/01_equipment_costing.ipynb)
+### 11:55 - 12:30 Setup and Exercises 1 and 2 (35 min)
 
-### 0:40 - 1:15 Building a plant
-Plant configuration, fixed capital investment, fixed and variable OPEX, revenue, cash flow, NPV, IRR, ROI, payback time, levelized cost.
-- [02_building_a_plant.ipynb](notebooks/02_building_a_plant.ipynb)
+| Time | Duration | Notebook | Core task | Bonus task |
+|---|---|---|---|---|
+| 11:55 - 12:00 | 5 min | [00 Setup check](notebooks/00_setup_check.ipynb) | Confirm every check prints `OK` | |
+| 12:00 - 12:12 | 12 min | [Exercise 1: Equipment costing](notebooks/01_equipment_costing.ipynb) | 1.1 Cost the green-ammonia loop | 1.2 Material and cost-year choices |
+| 12:12 - 12:30 | 18 min | [Exercise 2: Building a plant](notebooks/02_building_a_plant.ipynb) | 2.1 Where should the plant be built? | 2.2 Break-even price and catalyst replacement |
 
-### 1:15 - 1:25 Break
+Participants whose setup check fails at 11:55 switch to Google Colab and continue there; installation issues are fixed during lunch.
 
-### 1:25 - 1:55 Cost breakdowns, cash-flow diagrams, and sensitivity
-The data-plus-plot pattern, stacked-bar breakdowns, cumulative cash-flow diagram, one-way sensitivity curves, tornado plots.
-- [03_cost_breakdowns_and_sensitivity.ipynb](notebooks/03_cost_breakdowns_and_sensitivity.ipynb)
+## Lunch (12:30 - 13:30)
 
-### 1:55 - 2:20 Monte Carlo uncertainty analysis
-Uncertainty distributions on prices, quantities, and project-level factors; running and interpreting a Monte Carlo simulation; comparing plants under uncertainty.
-- [04_monte_carlo_uncertainty.ipynb](notebooks/04_monte_carlo_uncertainty.ipynb)
+Installation help desk during the first 15 minutes of lunch for anyone who used Colab in Block 1.
 
-### 2:20 - 2:55 Capstone case study
-Steam methane reforming versus water electrolysis for hydrogen production: build both plants from simulation results, compare cost structures, run sensitivity and Monte Carlo, and draw a conclusion.
-- [05_case_study_hydrogen.ipynb](notebooks/05_case_study_hydrogen.ipynb)
+## Block 2 (13:30 - 14:45)
 
-### 2:55 - 3:00 Wrap-up
-Where to find help, how to contribute cost correlations, the optional [home assignment](HOME_ASSIGNMENT.md).
+### 13:30 - 14:35 Exercises 3 to 6 (65 min)
 
-### Optional, if time allows or for self-study
-The JSON configuration workflow and the `openpytea` command-line interface for reproducible, script-free studies.
-- [06_optional_json_and_cli.ipynb](notebooks/06_optional_json_and_cli.ipynb)
+| Time | Duration | Notebook | Core task | Bonus task |
+|---|---|---|---|---|
+| 13:30 - 13:45 | 15 min | [Exercise 3: Cost breakdowns and sensitivity](notebooks/03_cost_breakdowns_and_sensitivity.ipynb) | 3.1 Break-even electricity price | 3.2 Publication-ready figure |
+| 13:45 - 14:00 | 15 min | [Exercise 4: Monte Carlo uncertainty](notebooks/04_monte_carlo_uncertainty.ipynb) | 4.1 Value of better cost data | |
+| 14:00 - 14:25 | 25 min | [Exercise 5: Case study, SMR vs. electrolysis](notebooks/05_case_study_hydrogen.ipynb) | 5.1 Electrolysis plant, 5.2 CO₂ break-even tax, 5.3 Monte Carlo comparison | |
+| 14:25 - 14:35 | 10 min | [Exercise 6: JSON configuration files and CLI](notebooks/06_json_and_cli.ipynb) | Run the demo cells | 6.1 Scenario file |
+
+### 14:35 - 14:45 Wrap-up and GUI demonstration (10 min)
+- Key take-aways and the discussion questions of Exercise 5.
+- Live demonstration of the OpenPyTEA graphical user interface: the same workflow without writing code. Installers for Windows and macOS are on the [Releases page](https://github.com/pbtamarona/OpenPyTEA/releases).
+- Where to get help, how to contribute cost correlations, and the optional [home assignment](HOME_ASSIGNMENT.md).
+
+## If the session runs late
+
+Drop the bonus tasks first, then run the solution cells of Exercise 5 instead of writing the code, then shorten Exercise 6 to the command-line demo. All notebooks remain available for self-study after the workshop.

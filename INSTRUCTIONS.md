@@ -142,4 +142,4 @@ Send an email to `P.B.Tamarona@tudelft.nl` with:
 - The output of `python --version`
 - The full error message from the terminal or notebook
 
-We will also have a short troubleshooting slot at the start of the hands-on session.
+At the start of the hands-on session (11:55) there are five minutes to confirm the setup check. If it still fails then, you continue in Google Colab and we fix your installation during lunch.

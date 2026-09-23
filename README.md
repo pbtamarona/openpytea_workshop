@@ -1,23 +1,25 @@
 # OpenPyTEA Hands-On Workshop (TU Delft, November 6, 2026)
 
 <p align="center">
-  <img src="_images/workshop-flyer.jpg" alt="Open-Science Techno-Economic Assessment with OpenPyTEA" width="800"/>
+  <img src="_images/delft_during_fall.webp" alt="Canal in Delft during fall" width="800"/>
 </p>
+<p align="center"><sub>Delft in autumn. Image source: <a href="https://www.leshuttle.com/uk-en/discover/traveller-guides/delft-the-hidden-gem-of-the-netherlands">LeShuttle, "Delft: the hidden gem of the Netherlands"</a>.</sub></p>
 
 ## Overview
 
 Welcome! This repository contains the material for the **hands-on session** of the workshop
 **Open-Science Techno-Economic Assessment with OpenPyTEA: From Process Design to Economic Insights**.
 
-The hands-on session is a **3-hour** block in which you build a complete techno-economic assessment (TEA) in Python with the open-source [OpenPyTEA](https://github.com/pbtamarona/OpenPyTEA) toolkit:
+The hands-on session (11:45 - 12:30 and 13:30 - 14:45, two hours in total) opens with a short presentation on why we built OpenPyTEA. You then build a complete techno-economic assessment (TEA) in Python with the open-source [OpenPyTEA](https://github.com/pbtamarona/OpenPyTEA) toolkit, in six exercises:
 
 - Equipment cost estimation from cost correlations and vendor quotes
 - Plant-level CAPEX, OPEX, cash flow, and profitability metrics (NPV, IRR, ROI, payback time, levelized cost)
 - Cost breakdowns, cash-flow diagrams, sensitivity and tornado analysis
 - Monte Carlo uncertainty propagation
 - A capstone case study comparing two hydrogen production pathways
+- The JSON configuration workflow and command-line interface, and a demonstration of the OpenPyTEA graphical user interface
 
-The format is short instructor demos followed by exercises in Jupyter notebooks. All material stays available after the workshop.
+Each exercise is one Jupyter notebook with a short demo, core tasks, bonus tasks for fast participants, and solutions. All material stays available after the workshop.
 
 ## Quick Links
 
@@ -56,15 +58,15 @@ The first two parts of the `Introduction to Programming` section are enough.
 
 ## Repository Structure
 
-- [notebooks/](notebooks/README.md): the workshop notebooks, numbered in the order we use them
+- [notebooks/](notebooks/README.md): the workshop notebooks; the exercise number is the notebook number
   - `00_setup_check.ipynb`: run before the workshop to verify your installation
-  - `01_equipment_costing.ipynb`: equipment cost estimation
-  - `02_building_a_plant.ipynb`: plant configuration, CAPEX, OPEX, and profitability metrics
-  - `03_cost_breakdowns_and_sensitivity.ipynb`: breakdown charts, cash flow, sensitivity, and tornado plots
-  - `04_monte_carlo_uncertainty.ipynb`: uncertainty distributions and Monte Carlo simulation
-  - `05_case_study_hydrogen.ipynb`: capstone, steam methane reforming vs. water electrolysis
-  - `06_optional_json_and_cli.ipynb`: optional, the JSON configuration workflow and command-line interface
-  - `assets/`: JSON configuration files used in the case study and the optional notebook
+  - `01_equipment_costing.ipynb`: Exercise 1, equipment cost estimation
+  - `02_building_a_plant.ipynb`: Exercise 2, plant configuration, CAPEX, OPEX, and profitability metrics
+  - `03_cost_breakdowns_and_sensitivity.ipynb`: Exercise 3, breakdown charts, cash flow, sensitivity, and tornado plots
+  - `04_monte_carlo_uncertainty.ipynb`: Exercise 4, uncertainty distributions and Monte Carlo simulation
+  - `05_case_study_hydrogen.ipynb`: Exercise 5, capstone, steam methane reforming vs. water electrolysis
+  - `06_json_and_cli.ipynb`: Exercise 6, the JSON configuration workflow and command-line interface
+  - `assets/`: JSON configuration files used in Exercise 6
 - `envs/`: environment files (`requirements.txt` for pip/venv, `environment.yml` for conda)
 - `_images/`: figures used in the README and notebooks
 
@@ -76,7 +78,7 @@ Before the workshop:
 3. Optionally skim the [reading material](READING_MATERIAL.md).
 
 During the session:
-4. Work through notebooks 01 to 05 in the order given in [SCHEDULE.md](SCHEDULE.md).
+4. Work through Exercises 1 to 6 in the order given in [SCHEDULE.md](SCHEDULE.md). Start with the core tasks; do the bonus tasks only if you are ahead.
 5. Each notebook is self-contained: it starts by rebuilding what it needs from the previous notebook, so you can restart the kernel or skip ahead without losing anything.
 
 No data download is needed. Everything used in the session is either bundled in this repository or shipped with the `openpytea` package.
@@ -100,11 +102,36 @@ The workshop environment adds Jupyter Lab. See [INSTRUCTIONS.md](INSTRUCTIONS.md
 ## Workshop Information
 
 - **Full-day program:** lectures on process design and TEA fundamentals, the OpenPyTEA design and capabilities, this hands-on session, an industry talk by Shell, and a community discussion on shared TEA standards.
-- **Date:** November 6, 2026, 09:30 to 18:00
-- **Location:** Process & Energy, TU Delft, Delft, The Netherlands
+- **Date:** Friday, November 6, 2026, 09:30 to 18:00
+- **Hands-on session:** 11:45 - 12:30 and 13:30 - 14:45
+- **Location:** Lecture Hall B - Isaac Newton, Faculty of Mechanical Engineering, TU Delft (see [Venue and Directions](#venue-and-directions))
+- **Bring:** your own laptop, with the software from [INSTRUCTIONS.md](INSTRUCTIONS.md) installed
 - **Registration:** [aanmelder.nl/openpytea2026](https://aanmelder.nl/openpytea2026) (closes October 15, 2026)
 - **Package repository:** https://github.com/pbtamarona/OpenPyTEA
 - **Documentation:** https://openpytea.readthedocs.io
+
+<p align="center">
+  <img src="_images/workshop-flyer.jpg" alt="Open-Science Techno-Economic Assessment with OpenPyTEA" width="700"/>
+</p>
+
+## Venue and Directions
+
+The workshop takes place in **[Lecture Hall B - Isaac Newton](https://esviewer.tudelft.nl/space/6/)** (room 34.A-0-720, ground floor, 167 seats) in the building of the **[Faculty of Mechanical Engineering](https://www.tudelftcampus.nl/nl/poi/mechanical-engineering-me)** (building 34) on the TU Delft campus.
+
+- **Address:** Mekelweg 2, 2628 CD Delft, The Netherlands
+- **Google Maps:** [Faculty of Mechanical Engineering, Mekelweg 2](https://www.google.com/maps/search/?api=1&query=TU+Delft+Faculty+of+Mechanical+Engineering+Mekelweg+2+2628+CD+Delft)
+- **Landmark:** the building is directly opposite the Aula Conference Centre. Signs at the main entrance point you to the lecture halls.
+
+### By public transport from Delft Station
+
+1. Walk out of the station hall on the city-centre side to the bus platforms in front of the station.
+2. Take **bus 69** (direction TU Campus) or **bus 40** (direction Rotterdam Centraal). Buses 174 and 455 also stop at the campus.
+3. Get off at **Aula TU** after about 7 to 10 minutes.
+4. Cross Mekelweg: the Mechanical Engineering building is across the road from the Aula. Lecture Hall B is on the ground floor.
+
+**Tram 19** is scheduled to open its new route from Delft Station to the TU Delft campus in the second half of 2026. If it is running by November, it is an alternative to the bus.
+
+Check the live timetable in the [9292 journey planner](https://9292.nl/en) (search for "Delft, Aula TU") and pay with a contactless bank card or an OV-chipkaart. The trip also takes about 25 minutes on foot or 10 minutes by bicycle.
 
 ## Teaching Staff
 
@@ -115,6 +142,10 @@ The workshop environment adds Jupyter Lab. See [INSTRUCTIONS.md](INSTRUCTIONS.md
   - Artur M. Schweidtmann, TU Delft
   - Arnoud Higler, Shell
 - Format: lectures and a hands-on notebook session
+
+## Graphical User Interface
+
+The session closes with a demonstration of the OpenPyTEA GUI, which runs the same workflow without writing code. It is still in development and does not yet offer every feature of the Python package. Installers for Windows and macOS are on the [Releases page](https://github.com/pbtamarona/OpenPyTEA/releases).
 
 ## Citing OpenPyTEA
 

@@ -151,7 +151,7 @@ nb00.cells = header(
     [INSTRUCTIONS.md](../INSTRUCTIONS.md). Every check prints `OK` when it passes. If a check fails, the
     message tells you which installation step to repeat.
 
-    Expected time: 5 minutes.
+    Run it **at home before the workshop** (5 minutes). At the start of the session we only confirm that it passes.
     """,
     [
         "Confirm that the notebook runs in the environment you created for the workshop.",
@@ -224,8 +224,8 @@ nb00.cells = header(
     md("""
     ## 4) Command-line tool (optional)
 
-    Installing `openpytea` also installs a command-line tool of the same name. It is used only in the optional
-    notebook 06, so a `WARNING` here is not a problem for the session.
+    Installing `openpytea` also installs a command-line tool of the same name. It is used only in Exercise 6
+    (notebook 06), and a fallback is provided there, so a `WARNING` here is not a problem.
     """),
     code("""
     import shutil
@@ -255,14 +255,14 @@ nb00.cells = header(
 nb01 = nbf.v4.new_notebook()
 nb01.cells = header(
     "01_equipment_costing.ipynb",
-    "01 - Equipment costing",
+    "Exercise 1 - Equipment costing",
     """
     Every techno-economic assessment (TEA) starts from a list of equipment with sizes taken from a process
     simulation or a hand calculation. In this notebook we turn those sizes into **purchased** and **installed
     (direct) costs** with OpenPyTEA's `Equipment` class, and we build the equipment list of a small green-ammonia
     synthesis loop that we will use for the rest of the session.
 
-    Expected time: 25 minutes.
+    **Time in the session: 12 minutes** (Exercise 1 of 6). Bonus tasks are for participants who finish early; skip them if you are behind, the solutions are in the notebook.
     """,
     [
         "Create an `Equipment` object from a category, type, size parameter, and material.",
@@ -381,7 +381,7 @@ nb01.cells = header(
     print(f"45 MW compressor -> {big_compressor.num_units} parallel units, direct cost {big_compressor.direct_cost:,.0f} USD")
     """),
     md("""
-    **3d. Assemblies** such as a pressure-swing adsorption (PSA) skid can be built from sub-components with
+    **3d. Assemblies** (skim if you are short on time) such as a pressure-swing adsorption (PSA) skid can be built from sub-components with
     `CompositeEquipment`. The composite behaves like a single equipment item in the plant.
     """),
     code("""
@@ -397,7 +397,7 @@ nb01.cells = header(
     psa.breakdown().round(0)
     """),
     md("""
-    ## 4) Exercise 1: cost the green-ammonia synthesis loop
+    ## 4) Task 1.1: cost the green-ammonia synthesis loop
 
     The demo plant of this workshop is a small **green-ammonia synthesis loop** (100 t NH₃/day) fed with hydrogen
     from an electrolyzer and nitrogen from an air separation unit. The process simulation gives the following sizes:
@@ -461,7 +461,7 @@ nb01.cells = header(
     </details>
     """),
     md("""
-    ## 5) Exercise 2: how sensitive is the estimate to your choices?
+    ## 5) Task 1.2 (bonus): how sensitive is the estimate to your choices?
 
     Using the ammonia converter (R-101), answer the following:
 
@@ -500,7 +500,7 @@ nb01.cells = header(
     - Vendor quotes go in via `purchased_cost` and `cost_year`; assemblies via `CompositeEquipment`.
     - The list of `Equipment` objects is the input to the `Plant` we build in the next notebook.
 
-    **Next:** [02 - Building a plant](02_building_a_plant.ipynb)
+    **Next:** [Exercise 2 - Building a plant](02_building_a_plant.ipynb)
     """),
 ]
 
@@ -510,14 +510,14 @@ nb01.cells = header(
 nb02 = nbf.v4.new_notebook()
 nb02.cells = header(
     "02_building_a_plant.ipynb",
-    "02 - Building a plant",
+    "Exercise 2 - Building a plant",
     """
     A `Plant` combines an equipment list with economic assumptions and returns everything a TEA report needs:
     fixed capital investment, fixed and variable operating costs, revenue, yearly cash flows, and the profitability
     metrics (NPV, IRR, ROI, payback time, levelized cost). In this notebook we build the green-ammonia plant step by
     step and learn how to read and change its assumptions.
 
-    Expected time: 35 minutes.
+    **Time in the session: 18 minutes** (Exercise 2 of 6). Bonus tasks are for participants who finish early; skip them if you are behind, the solutions are in the notebook.
     """,
     [
         "Write a plant configuration dictionary with financial assumptions, products, and variable OPEX inputs.",
@@ -669,7 +669,7 @@ print(f"ISBL (sum of direct costs): {sum(e.direct_cost for e in equipment_list):
     print(f"NPV : {ammonia_plant.npv:,.0f} -> {variant.npv:,.0f} USD")
     """),
     md("""
-    ## 6) Exercise 3: where should the plant be built?
+    ## 6) Task 2.1: where should the plant be built?
 
     Location factors scale the ISBL to local construction costs. Compare the fixed capital investment and the
     levelized cost of the ammonia plant for these locations:
@@ -707,7 +707,7 @@ print(f"ISBL (sum of direct costs): {sum(e.direct_cost for e in equipment_list):
     </details>
     """),
     md("""
-    ## 7) Exercise 4: the break-even price and the effect of catalyst replacement
+    ## 7) Task 2.2 (bonus): the break-even price and the effect of catalyst replacement
 
     1. By definition the levelized cost is the price at which NPV = 0 **before taxes**. Check it: set the ammonia
        price equal to the computed `levelized_cost` on a copy of the plant and print the NPV. It comes out negative,
@@ -751,7 +751,7 @@ print(f"ISBL (sum of direct costs): {sum(e.direct_cost for e in equipment_list):
     - `calculate_all()` gives FCI, OPEX, revenue, cash flow, NPV, LCOP, PBT, ROI, IRR in one call.
     - `deepcopy` + `update_configuration()` is the pattern for scenarios; we automate it in the next notebook.
 
-    **Next:** [03 - Cost breakdowns and sensitivity](03_cost_breakdowns_and_sensitivity.ipynb)
+    **Next:** [Exercise 3 - Cost breakdowns and sensitivity](03_cost_breakdowns_and_sensitivity.ipynb)
     """),
 ]
 
@@ -761,13 +761,13 @@ print(f"ISBL (sum of direct costs): {sum(e.direct_cost for e in equipment_list):
 nb03 = nbf.v4.new_notebook()
 nb03.cells = header(
     "03_cost_breakdowns_and_sensitivity.ipynb",
-    "03 - Cost breakdowns, cash-flow diagrams, and sensitivity analysis",
+    "Exercise 3 - Cost breakdowns, cash-flow diagrams, and sensitivity analysis",
     """
     Totals hide where the money goes. This notebook uses OpenPyTEA's analysis and plotting functions to break costs
     down, draw the cumulative cash-flow diagram, and ask *"what if"* questions with one-way sensitivity curves and
     tornado plots.
 
-    Expected time: 30 minutes.
+    **Time in the session: 15 minutes** (Exercise 3 of 6). Bonus tasks are for participants who finish early; skip them if you are behind, the solutions are in the notebook.
     """,
     [
         "Apply the `*_data()` + `plot_*()` pattern that every OpenPyTEA visualization follows.",
@@ -903,7 +903,7 @@ nb03.cells = header(
     > bounds on their isolated leverage. Notebook 04 shows how to declare such dependencies so that the sweep
     > respects them.
 
-    ## 6) Exercise 5: at what electricity price does the project stop being profitable?
+    ## 6) Task 3.1: at what electricity price does the project stop being profitable?
 
     1. Run a one-way sensitivity of the **NPV** to the **electricity price** over ± 100 % (`plus_minus_value=1.0`, `n_points=41`).
     2. Plot it, then use `numpy.interp` on the returned curve to find the electricity price at which NPV = 0.
@@ -939,7 +939,7 @@ nb03.cells = header(
     </details>
     """),
     md("""
-    ## 7) Exercise 6: make it publication-ready
+    ## 7) Task 3.2 (bonus): make it publication-ready
 
     Every plot function accepts `show=False` and returns `(fig, ax)`, so you can restyle it with matplotlib. Take the
     variable OPEX comparison of the two plants, give it a title, remove the top and right spines, and save it as a
@@ -970,7 +970,7 @@ nb03.cells = header(
     - One-way sensitivity curves answer "at what price does this break even?"; tornado plots rank the drivers.
     - Both are deterministic and vary one input at a time. The next notebook varies them all at once.
 
-    **Next:** [04 - Monte Carlo uncertainty analysis](04_monte_carlo_uncertainty.ipynb)
+    **Next:** [Exercise 4 - Monte Carlo uncertainty analysis](04_monte_carlo_uncertainty.ipynb)
     """),
 ]
 
@@ -980,13 +980,14 @@ nb03.cells = header(
 nb04 = nbf.v4.new_notebook()
 nb04.cells = header(
     "04_monte_carlo_uncertainty.ipynb",
-    "04 - Monte Carlo uncertainty analysis",
+    "Exercise 4 - Monte Carlo uncertainty analysis",
     """
     Prices, capital estimates, and process quantities are uncertain, and they are uncertain **at the same time**.
     Monte Carlo simulation samples all of them from probability distributions, recomputes the plant thousands of
     times, and returns distributions of NPV, levelized cost, and the other metrics instead of single numbers.
 
-    Expected time: 25 minutes.
+    **Time in the session: 15 minutes** (Exercise 4 of 6). Section 5 on parameter dependencies is a short demo:
+    skim it if you are behind.
     """,
     [
         "Attach uncertainty distributions to prices, process quantities, the operator rate, and project-level factors.",
@@ -1105,7 +1106,7 @@ nb04.cells = header(
     print(f"P(efficient design is cheaper): {np.mean(np.asarray(mc_efficient['metrics']['LCOP']) < lcop):.1%}")
     """),
     md("""
-    ## 5) Dependencies between parameters
+    ## 5) Going further: dependencies between parameters (short demo)
 
     So far every input was sampled independently. In reality the hydrogen and nitrogen consumption follow the
     ammonia production (stoichiometry), and the electricity consumption follows it too. OpenPyTEA lets you declare
@@ -1133,7 +1134,7 @@ nb04.cells = header(
     fig, ax = plot_tornado(tornado_data(ammonia_plant, plus_minus_value=0.3, metric="NPV", include_process_params=True))
     """),
     md("""
-    ## 6) Exercise 7: how much would better cost data be worth?
+    ## 6) Task 4.1: how much would better cost data be worth?
 
     The capital cost estimate is the largest single uncertainty (`fixed_capital_factor`, ± 30 %). Suppose a detailed
     engineering study could narrow it to ± 10 %.
@@ -1181,7 +1182,7 @@ nb04.cells = header(
     - `monte_carlo()` returns raw samples; percentiles and probabilities are yours to compute.
     - Look at the inputs, compare plants with `plot_multiple_monte_carlo()`, and declare dependencies so the sweeps stay physical.
 
-    **Next:** [05 - Case study: hydrogen production pathways](05_case_study_hydrogen.ipynb)
+    **Next:** [Exercise 5 - Case study: hydrogen production pathways](05_case_study_hydrogen.ipynb)
     """),
 ]
 
@@ -1191,7 +1192,7 @@ nb04.cells = header(
 nb05 = nbf.v4.new_notebook()
 nb05.cells = header(
     "05_case_study_hydrogen.ipynb",
-    "05 - Case study: steam methane reforming vs. water electrolysis",
+    "Exercise 5 - Case study: steam methane reforming vs. water electrolysis",
     f"""
     Time to put everything together. Two plants each produce **50 t of hydrogen per day** on the US Gulf Coast:
     a **steam methane reforming (SMR)** plant sized from an Aspen Plus simulation, and a pressurized **alkaline
@@ -1201,8 +1202,9 @@ nb05.cells = header(
     The data are adapted from case study 1 of the OpenPyTEA repository (Tamarona et al., 2026), where a third
     pathway, methane pyrolysis, is also analysed.
 
-    Expected time: 35 minutes. The SMR plant is given; the electrolysis plant and the comparison are exercises.
-    Each exercise is followed by a solution cell so that the notebook can always be run to the end.
+    **Time in the session: 25 minutes** (Exercise 5 of 6). The SMR plant is given: run through it quickly. The
+    electrolysis plant and the comparison are your tasks. Each task is followed by a solution cell, so run it and
+    move on if you are behind: the notebook always runs to the end.
     """,
     [
         "Translate a process flowsheet and a sizing table into an OpenPyTEA equipment list and plant configuration.",
@@ -1315,7 +1317,7 @@ nb05.cells = header(
     print(f"SMR  FCI {smr_plant.fixed_capital/1e6:6.1f} MUSD   LCOH {smr_plant.levelized_cost:.2f} USD/kg   NPV {smr_plant.npv/1e6:7.1f} MUSD   IRR {smr_plant.irr:.1%}")
     """),
     md(f"""
-    ## 3) Exercise 8: build the water-electrolysis plant
+    ## 3) Task 5.1: build the water-electrolysis plant
 
     The DOE report describes a pressurized alkaline system (about 30 bar) delivering 99.99 % hydrogen without
     downstream compression.
@@ -1406,7 +1408,7 @@ nb05.cells = header(
     fig, ax = plot_tornado(tornado_data(smr_plant, plus_minus_value=0.3, metric="LCOP"))
     """),
     md("""
-    ## 6) Exercise 9: the CO₂ tax that levels the field
+    ## 6) Task 5.2: the CO₂ tax that levels the field
 
     The SMR plant emits about 12 kg CO₂ per kg H₂. At what CO₂ tax (USD per kg CO₂) does the levelized cost of
     hydrogen from SMR equal that of electrolysis?
@@ -1443,7 +1445,7 @@ nb05.cells = header(
     plt.show()
     """),
     md("""
-    ## 7) Exercise 10: which one is cheaper, and how sure are we?
+    ## 7) Task 5.3: which one is cheaper, and how sure are we?
 
     Every price already carries an uncertainty block, and the default project-level uncertainties are active.
 
@@ -1481,7 +1483,7 @@ nb05.cells = header(
     md("""
     ## 8) Discussion
 
-    Take five minutes with your neighbour:
+    We pick these questions up together in the wrap-up. If you finish early, discuss them with your neighbour:
 
     - Which three inputs would you spend effort on before showing these results to a decision maker?
     - The comparison uses a **class-4 factorial estimate** for SMR and **vendor-level system costs** for electrolysis. Is that a fair comparison? How would you make the accuracy classes consistent?
@@ -1492,25 +1494,27 @@ nb05.cells = header(
     You have built two plants from process data, compared their cost structures, identified their drivers, found a
     policy break-even point, and quantified the ranking under uncertainty. That is the complete OpenPyTEA workflow.
 
-    - Keep going with the optional [06 - JSON configuration files and the command line](06_optional_json_and_cli.ipynb).
+    **Next:** [Exercise 6 - JSON configuration files and the command line](06_json_and_cli.ipynb)
+
+    After the workshop:
     - Try the [home assignment](../HOME_ASSIGNMENT.md) on a process of your own.
     - Missing a cost correlation? Contribute it: https://github.com/pbtamarona/OpenPyTEA
     """),
 ]
 
 # ======================================================================================
-# 06 - Optional: JSON and CLI
+# 06 - JSON and CLI
 # ======================================================================================
 nb06 = nbf.v4.new_notebook()
 nb06.cells = header(
-    "06_optional_json_and_cli.ipynb",
-    "06 - Optional: JSON configuration files and the command line",
+    "06_json_and_cli.ipynb",
+    "Exercise 6 - JSON configuration files and the command line",
     """
     Everything we did in Python can also be driven by a **JSON configuration file**: equipment, plant, analysis
     settings, and output options in one document. This makes a study reproducible, shareable, and easy to
     version-control, and it lets colleagues without Python run the same assessment from the command line.
 
-    Expected time: 20 minutes (self-study or if time allows).
+    **Time in the session: 10 minutes** (Exercise 6 of 6). Run the demo cells; Task 6.1 is a bonus for later.
     """,
     [
         "Read a combined OpenPyTEA JSON configuration file and map its blocks to the Python objects you know.",
@@ -1630,7 +1634,7 @@ nb06.cells = header(
     print(json.dumps(plant.to_dict(), indent=2, default=str)[:800], "...")
     """),
     md("""
-    ## 5) Exercise 11: a scenario file
+    ## 5) Task 6.1 (bonus): a scenario file
 
     1. Load `assets/we_hydrogen.json`, change the electricity price to 0.02 USD/kWh and the plant name to
        `"Water electrolysis, cheap power"`, and save it as `outputs/we_cheap_power.json`.
@@ -1684,7 +1688,7 @@ for name, nb in [
     ("03_cost_breakdowns_and_sensitivity.ipynb", nb03),
     ("04_monte_carlo_uncertainty.ipynb", nb04),
     ("05_case_study_hydrogen.ipynb", nb05),
-    ("06_optional_json_and_cli.ipynb", nb06),
+    ("06_json_and_cli.ipynb", nb06),
 ]:
     nb.metadata = KERNEL
     nbf.validate(nb)
