@@ -1,54 +1,48 @@
-# Hands-On Session Schedule
+# Workshop Schedule
 
-The OpenPyTEA hands-on session (Panji B. Tamarona) runs on **Friday, November 6, 2026** in **Lecture Hall B - Isaac Newton**, Faculty of Mechanical Engineering, TU Delft (directions in the [README](README.md#venue-and-directions)). It takes place in two blocks around lunch:
+**Friday, November 6, 2026**, Lecture Hall B - Isaac Newton, Faculty of Mechanical Engineering, TU Delft
+(directions in the [README](README.md#venue-and-directions)).
 
-| Block | Time | Duration |
+## Full-day program
+
+The day combines lectures, the hands-on session, an industry perspective, and an open discussion.
+
+| Time | Session |
+|---|---|
+| 09:30 - 09:55 | Welcome and coffee |
+| 09:55 - 10:00 | Opening remarks |
+| 10:00 - 10:45 | From Lab to Industry: Process Design |
+| 10:45 - 11:30 | TEA Fundamentals: Theory and Practice |
+| 11:30 - 11:45 | Coffee break |
+| 11:45 - 12:30 | **Hands-on session with OpenPyTEA: Part 1** |
+| 12:30 - 13:30 | Lunch |
+| 13:30 - 14:45 | **Hands-on session with OpenPyTEA: Part 2** |
+| 14:45 - 15:30 | Multi-Agent Systems for Process Design |
+| 15:30 - 15:45 | Coffee break |
+| 15:45 - 16:30 | Industry talk: feasibility assessment in practice (Shell) |
+| 16:30 - 16:45 | Community discussion: shared standards for transparent and reproducible TEA |
+| 16:45 - 18:00 | Closing, social drinks, and networking |
+
+Slides of the talks go into [slides/](slides/README.md) after the workshop; the agenda and outcomes of the community discussion are in [discussion/](discussion/README.md). Everything stays online afterwards.
+
+## Hands-on session with OpenPyTEA
+
+The hands-on session runs in two parts around lunch:
+
+| Part | Time | Duration |
 |---|---|---|
-| Block 1 | 11:45 - 12:30 | 45 min |
+| Part 1 | 11:45 - 12:30 | 45 min |
 | Lunch | 12:30 - 13:30 | |
-| Block 2 | 13:30 - 14:45 | 75 min |
+| Part 2 | 13:30 - 14:45 | 75 min |
 
-The other sessions of the day (process design, TEA fundamentals, the industry talk by Shell, and the community discussion) are not part of this repository. For the full-day program, see https://www.aanmelder.nl/openpytea2026.
+It consists of six exercises, one notebook each. The exercise number is the notebook number. Inside a notebook, tasks are numbered per exercise (Task 1.1, Task 1.2, ...). Tasks marked **bonus** are for participants who finish early. Every task has a solution in the notebook, so nobody gets stuck.
 
-The session consists of six exercises, one notebook each. The exercise number is the notebook number. Inside a notebook, tasks are numbered per exercise (Task 1.1, Task 1.2, ...). Tasks marked **bonus** are for participants who finish early. Every task has a solution in the notebook, so nobody gets stuck.
+### Part 1
 
-## Before the session
-
-Complete at home:
-- [INSTRUCTIONS.md](INSTRUCTIONS.md): installation, about 15 minutes
-- [notebooks/00_setup_check.ipynb](notebooks/00_setup_check.ipynb): every check should print `OK`
-- Optionally, the [reading material](READING_MATERIAL.md)
-
-## How to open the notebooks
-
-- Open a terminal in the repository root.
-- Activate the environment:
-
-```bash
-# venv/pip route on macOS or Linux
-source .venv-openpytea/bin/activate
-
-# venv/pip route on Windows PowerShell
-.\.venv-openpytea\Scripts\Activate.ps1
-
-# conda route
-conda activate openpytea-ws
-```
-
-- Start Jupyter Lab and open the notebook we are working on from the `notebooks/` folder:
-
-```bash
-jupyter lab
-```
-
-Alternatively, open the notebook in Google Colab via the badge at the top of each notebook.
-
-## Block 1 (11:45 - 12:30)
-
-### 11:45 - 11:55 Why OpenPyTEA? (presentation, 10 min)
+#### 11:45 - 11:55 Why OpenPyTEA? (presentation, 10 min)
 Why we built an open-source TEA toolkit, what it does, and how it fits into the TEA workflow.
 
-### 11:55 - 12:30 Setup and Exercises 1 and 2 (35 min)
+#### 11:55 - 12:30 Setup and Exercises 1 and 2 (35 min)
 
 | Time | Duration | Notebook | Core task | Bonus task |
 |---|---|---|---|---|
@@ -58,11 +52,11 @@ Why we built an open-source TEA toolkit, what it does, and how it fits into the 
 
 Participants whose setup check fails at 11:55 switch to Google Colab and continue there; installation issues are fixed during lunch.
 
-## Lunch (12:30 - 13:30)
+### Lunch (12:30 - 13:30)
 
-Installation help desk during the first 15 minutes of lunch for anyone who used Colab in Block 1.
+Installation help desk during the first 15 minutes of lunch for anyone who used Colab in Part 1.
 
-## Block 2 (13:30 - 14:45)
+### Part 2
 
 ### 13:30 - 14:35 Exercises 3 to 6 (65 min)
 
@@ -77,7 +71,3 @@ Installation help desk during the first 15 minutes of lunch for anyone who used 
 - Key take-aways and the discussion questions of Exercise 5.
 - Live demonstration of the OpenPyTEA graphical user interface: the same workflow without writing code. Installers for Windows and macOS are on the [Releases page](https://github.com/pbtamarona/OpenPyTEA/releases).
 - Where to get help, how to contribute cost correlations, and the optional [home assignment](HOME_ASSIGNMENT.md).
-
-## If the session runs late
-
-Drop the bonus tasks first, then run the solution cells of Exercise 5 instead of writing the code, then shorten Exercise 6 to the command-line demo. All notebooks remain available for self-study after the workshop.

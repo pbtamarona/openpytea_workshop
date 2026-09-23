@@ -14,14 +14,22 @@ env/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 
-# Outputs written by the notebooks
+# Outputs written by the notebooks (PDF slides under slides/ are tracked)
 notebooks/outputs/
 notebooks/**/outputs/
-*.pdf
-!_images/*.pdf
+notebooks/**/*.pdf
+notebooks/**/*.png
+!notebooks/assets/**
+
+# Editor lock files from open presentations
+~$*
+.~lock.*
 
 # OS and editors
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
+
+# Local-only notebook generator (kept out of the online repository)
+tools/
