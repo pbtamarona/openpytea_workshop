@@ -26,7 +26,8 @@ jobs:
       - name: Install workshop environment
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r envs/requirements.txt nbconvert
+          pip install "openpytea[ipython]"
+          pip install jupyterlab nbconvert
 
       - name: Smoke test OpenPyTEA import and CLI
         run: |

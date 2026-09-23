@@ -66,7 +66,6 @@ If you are completely new to Python, we recommend spending one or two hours on a
   - `05_case_study_hydrogen.ipynb`: Exercise 5, capstone, steam methane reforming vs. water electrolysis
   - `06_json_and_cli.ipynb`: Exercise 6, the JSON configuration workflow and command-line interface
   - `assets/`: JSON configuration files used in Exercise 6
-- `envs/`: environment files (`requirements.txt` for pip/venv, `environment.yml` for conda)
 - [slides/](slides/README.md): slides of the lectures, the hands-on introduction, and the industry talk
 - [discussion/](discussion/README.md): agenda, notes, and outcomes of the community discussion
 - `_images/`: figures used in the README and notebooks
@@ -97,7 +96,14 @@ OpenPyTEA is a pure-Python package available on PyPI and requires Python 3.10 or
 pip install openpytea
 ```
 
-The workshop environment adds Jupyter Lab. See [INSTRUCTIONS.md](INSTRUCTIONS.md) for the complete commands and the environment files in `envs/`.
+For the workshop you install it yourself with the `ipython` extra, which adds notebook support such as the Monte Carlo progress bar, and then add Jupyter Lab:
+
+```bash
+pip install "openpytea[ipython]"
+pip install jupyterlab
+```
+
+See [INSTRUCTIONS.md](INSTRUCTIONS.md) for the complete steps.
 
 ## Workshop Information
 
