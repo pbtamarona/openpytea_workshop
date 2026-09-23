@@ -1,0 +1,27 @@
+# Local reference copies used while building this repository (not part of the workshop)
+OpenPyTEA-main/
+barcelona-regionalized-lcia/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv*/
+venv/
+env/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Outputs written by the notebooks
+notebooks/outputs/
+notebooks/**/outputs/
+*.pdf
+!_images/*.pdf
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

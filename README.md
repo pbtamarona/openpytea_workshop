@@ -1,0 +1,127 @@
+# OpenPyTEA Hands-On Workshop (TU Delft, November 6, 2026)
+
+<p align="center">
+  <img src="_images/workshop-flyer.jpg" alt="Open-Science Techno-Economic Assessment with OpenPyTEA" width="800"/>
+</p>
+
+## Overview
+
+Welcome! This repository contains the material for the **hands-on session** of the workshop
+**Open-Science Techno-Economic Assessment with OpenPyTEA: From Process Design to Economic Insights**.
+
+The hands-on session is a **3-hour** block in which you build a complete techno-economic assessment (TEA) in Python with the open-source [OpenPyTEA](https://github.com/pbtamarona/OpenPyTEA) toolkit:
+
+- Equipment cost estimation from cost correlations and vendor quotes
+- Plant-level CAPEX, OPEX, cash flow, and profitability metrics (NPV, IRR, ROI, payback time, levelized cost)
+- Cost breakdowns, cash-flow diagrams, sensitivity and tornado analysis
+- Monte Carlo uncertainty propagation
+- A capstone case study comparing two hydrogen production pathways
+
+The format is short instructor demos followed by exercises in Jupyter notebooks. All material stays available after the workshop.
+
+## Quick Links
+
+- [INSTRUCTIONS.md](INSTRUCTIONS.md): pre-workshop installation steps (15 minutes, please do this before you arrive)
+- [SCHEDULE.md](SCHEDULE.md): agenda of the hands-on session with notebook mapping
+- [READING_MATERIAL.md](READING_MATERIAL.md): optional background reading
+- [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-workshop assignment
+- [OpenPyTEA documentation](https://openpytea.readthedocs.io)
+
+## Learning Outcomes
+
+By the end of the session, you will be able to:
+
+- Explain how OpenPyTEA turns process-simulation results into a TEA (equipment, plant, analysis, plotting).
+- Estimate purchased and installed equipment costs, including inflation adjustment and material and installation factors.
+- Configure a `Plant` with financial assumptions, products, and variable OPEX inputs, and compute CAPEX, OPEX, NPV, IRR, and levelized cost.
+- Produce and interpret cost-breakdown charts, cash-flow diagrams, sensitivity curves, and tornado plots.
+- Define uncertainty distributions and run a Monte Carlo simulation.
+- Compare technology alternatives in a consistent, reproducible way.
+
+## Target Audience
+
+- Students, researchers, and engineers in chemical, energy, and sustainability sciences.
+- Basic Python skills (variables, lists, dictionaries, functions) are sufficient. No prior OpenPyTEA experience is required.
+- Familiarity with basic process-design and cost-engineering concepts (CAPEX, OPEX, NPV) helps but is not required; the morning lectures cover the fundamentals.
+
+---
+**NOTE**
+
+If you are completely new to Python, we recommend spending one or two hours on a beginner tutorial before the workshop, for example the University of Helsinki online course (no installation needed):
+- https://programming-25.mooc.fi/part-1/1-getting-started
+
+The first two parts of the `Introduction to Programming` section are enough.
+
+---
+
+## Repository Structure
+
+- [notebooks/](notebooks/README.md): the workshop notebooks, numbered in the order we use them
+  - `00_setup_check.ipynb`: run before the workshop to verify your installation
+  - `01_equipment_costing.ipynb`: equipment cost estimation
+  - `02_building_a_plant.ipynb`: plant configuration, CAPEX, OPEX, and profitability metrics
+  - `03_cost_breakdowns_and_sensitivity.ipynb`: breakdown charts, cash flow, sensitivity, and tornado plots
+  - `04_monte_carlo_uncertainty.ipynb`: uncertainty distributions and Monte Carlo simulation
+  - `05_case_study_hydrogen.ipynb`: capstone, steam methane reforming vs. water electrolysis
+  - `06_optional_json_and_cli.ipynb`: optional, the JSON configuration workflow and command-line interface
+  - `assets/`: JSON configuration files used in the case study and the optional notebook
+- `envs/`: environment files (`requirements.txt` for pip/venv, `environment.yml` for conda)
+- `_images/`: figures used in the README and notebooks
+
+## Recommended Workflow
+
+Before the workshop:
+1. Follow [INSTRUCTIONS.md](INSTRUCTIONS.md) to install Python, OpenPyTEA, and Jupyter Lab.
+2. Run `notebooks/00_setup_check.ipynb` and check that every cell passes.
+3. Optionally skim the [reading material](READING_MATERIAL.md).
+
+During the session:
+4. Work through notebooks 01 to 05 in the order given in [SCHEDULE.md](SCHEDULE.md).
+5. Each notebook is self-contained: it starts by rebuilding what it needs from the previous notebook, so you can restart the kernel or skip ahead without losing anything.
+
+No data download is needed. Everything used in the session is either bundled in this repository or shipped with the `openpytea` package.
+
+## No Installation? Use Google Colab
+
+Every notebook can also be opened in Google Colab, where the first cell installs OpenPyTEA for you.
+Use the **Open in Colab** badge at the top of each notebook, or open a notebook directly from
+https://colab.research.google.com/github/pbtamarona/openpytea-workshop/. A local installation is still recommended so that you can keep using OpenPyTEA after the workshop.
+
+## Software
+
+OpenPyTEA is a pure-Python package available on PyPI and requires Python 3.10 or newer:
+
+```bash
+pip install openpytea
+```
+
+The workshop environment adds Jupyter Lab. See [INSTRUCTIONS.md](INSTRUCTIONS.md) for the complete commands and the environment files in `envs/`.
+
+## Workshop Information
+
+- **Full-day program:** lectures on process design and TEA fundamentals, the OpenPyTEA design and capabilities, this hands-on session, an industry talk by Shell, and a community discussion on shared TEA standards.
+- **Date:** November 6, 2026, 09:30 to 18:00
+- **Location:** Process & Energy, TU Delft, Delft, The Netherlands
+- **Registration:** [aanmelder.nl/openpytea2026](https://aanmelder.nl/openpytea2026) (closes October 15, 2026)
+- **Package repository:** https://github.com/pbtamarona/OpenPyTEA
+- **Documentation:** https://openpytea.readthedocs.io
+
+## Teaching Staff
+
+- Organizers and lecturers:
+  - [Panji B. Tamarona](mailto:P.B.Tamarona@tudelft.nl), TU Delft (hands-on session)
+  - Mahinder Ramdin, TU Delft
+  - Thijs J.H. Vlugt, TU Delft
+  - Artur M. Schweidtmann, TU Delft
+  - Arnoud Higler, Shell
+- Format: lectures and a hands-on notebook session
+
+## Citing OpenPyTEA
+
+If you use OpenPyTEA in your work, please cite:
+
+> Tamarona, P.B., Vlugt, T.J.H., & Ramdin, M. (2026). *OpenPyTEA: An open-source python toolkit for techno-economic assessment of chemical process plants and energy systems with economic sensitivity and uncertainty evaluation.* SoftwareX, 35, 102816. https://doi.org/10.1016/j.softx.2026.102816
+
+## License
+
+Unless otherwise specified, the material in this repository is licensed under the MIT License. See [LICENSE](LICENSE).

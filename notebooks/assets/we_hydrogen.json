@@ -1,0 +1,172 @@
+{
+  "equipment": [
+    {
+      "name": "Stack",
+      "param": 0,
+      "process_type": "Fluids",
+      "category": "Electrolysis",
+      "type": "Stack",
+      "material": "Carbon steel",
+      "purchased_cost": 17194000,
+      "cost_year": 2020
+    },
+    {
+      "name": "Mechanical BOP",
+      "param": 0,
+      "process_type": "Fluids",
+      "category": "Electrolysis",
+      "type": "Mechanical",
+      "material": "Carbon steel",
+      "purchased_cost": 11019000,
+      "cost_year": 2020
+    },
+    {
+      "name": "Electrical BOP",
+      "param": 0,
+      "process_type": "Electrical",
+      "category": "Electrolysis",
+      "type": "Electrical",
+      "material": "Carbon steel",
+      "purchased_cost": 16974000,
+      "cost_year": 2020
+    }
+  ],
+  "plant": {
+    "plant_name": "Water electrolysis",
+    "process_type": "Fluids",
+    "country": "United States",
+    "region": "Gulf Coast",
+    "interest_rate": 0.09,
+    "project_lifetime": 30,
+    "plant_utilization": 0.95,
+    "tax_rate": 0.25,
+    "operator_hourly_rate": {
+      "rate": 38.11,
+      "rate_uncertainty": {
+        "std": 10,
+        "min": 25,
+        "max": 50
+      }
+    },
+    "plant_products": {
+      "hydrogen": {
+        "production": 50000,
+        "price": 5.0
+      }
+    },
+    "operators_hired": 14,
+    "additional_capex_cost": [
+      23071452.53,
+      23071452.53
+    ],
+    "additional_capex_years": [
+      10,
+      20
+    ],
+    "variable_opex_inputs": {
+      "electricity": {
+        "consumption": 2352000,
+        "price": 0.05,
+        "price_uncertainty": {
+          "std": 0.03,
+          "min": 0.01,
+          "max": 3.0
+        }
+      },
+      "water": {
+        "consumption": 378000,
+        "price": 0.003,
+        "price_uncertainty": {
+          "std": 0.001,
+          "min": 0.0,
+          "max": 0.005
+        }
+      }
+    }
+  },
+  "analysis": {
+    "direct_costs": {
+      "run": true,
+      "args": {
+        "pct": true
+      }
+    },
+    "fixed_capital": {
+      "run": true,
+      "args": {
+        "additional_capex": true,
+        "pct": false
+      }
+    },
+    "fixed_opex": {
+      "run": true,
+      "args": {
+        "pct": true
+      }
+    },
+    "variable_opex": {
+      "run": true,
+      "args": {
+        "pct": false
+      }
+    },
+    "levelized_cost": {
+      "run": true,
+      "args": {
+        "pct": false
+      }
+    },
+    "cash_flow": {
+      "run": true
+    },
+    "sensitivity": {
+      "run": true,
+      "cases": [
+        {
+          "name": "electricity_lcop",
+          "args": {
+            "parameter": "electricity",
+            "plus_minus_value": 0.6,
+            "metric": "LCOP"
+          }
+        },
+        {
+          "name": "interest_rate_npv",
+          "args": {
+            "parameter": "interest_rate",
+            "plus_minus_value": 0.6,
+            "metric": "NPV"
+          }
+        }
+      ]
+    },
+    "tornado": {
+      "run": true,
+      "args": {
+        "plus_minus_value": 0.3,
+        "metric": "LCOP",
+        "additional_capex": true
+      }
+    },
+    "monte_carlo": {
+      "run": true,
+      "args": {
+        "num_samples": 20000,
+        "batch_size": 5000,
+        "additional_capex": true,
+        "random_seed": 7
+      },
+      "metric": [
+        "LCOP",
+        "NPV"
+      ],
+      "plot_inputs": false
+    }
+  },
+  "output": {
+    "save_json": true,
+    "save_plots": true,
+    "plot_format": "png",
+    "dpi": 200
+  }
+}
