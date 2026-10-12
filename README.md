@@ -7,9 +7,9 @@
 
 ## Overview
 
-Welcome! This repository holds all material of the one-day workshop **Open-Science Techno-Economic Assessment with OpenPyTEA: From Process Design to Economic Insights**: lecture and industry-talk slides (uploaded after the workshop), notes from the community discussion, and the core **hands-on session with OpenPyTEA**.
+Welcome! This repository holds all material of the one-day workshop **Open-Science Techno-Economic Assessment with OpenPyTEA: From Process Design to Economic Insights**: notes from the community discussion and the core **hands-on session with OpenPyTEA**.
 
-The hands-on session (11:45 - 12:30 and 13:30 - 14:45, two hours in total) opens with a short presentation on why we built OpenPyTEA. You then build a complete techno-economic assessment (TEA) in Python with the open-source [OpenPyTEA](https://github.com/pbtamarona/OpenPyTEA) toolkit, in six exercises:
+The hands-on session (11:45 - 12:45 and 13:45 - 14:45, two hours in total) opens with a short presentation on why we built OpenPyTEA. You then build a complete techno-economic assessment (TEA) in Python with the open-source [OpenPyTEA](https://github.com/pbtamarona/OpenPyTEA) toolkit, in six exercises:
 
 - Equipment cost estimation from cost correlations and vendor quotes
 - Plant-level CAPEX, OPEX, cash flow, and profitability metrics (NPV, IRR, ROI, payback time, levelized cost)
@@ -18,13 +18,12 @@ The hands-on session (11:45 - 12:30 and 13:30 - 14:45, two hours in total) opens
 - A capstone case study comparing two hydrogen production pathways
 - The JSON configuration workflow and command-line interface, and a demonstration of the OpenPyTEA graphical user interface
 
-Each exercise is one Jupyter notebook with a short demo, core tasks, bonus tasks for fast participants, and solutions. All material stays available after the workshop.
+Each exercise is one Jupyter notebook with a short demo, core tasks, and bonus tasks for fast participants. Solutions are in the printed handouts you receive at the workshop. All material stays available after the workshop.
 
 ## Quick Links
 
 - [INSTRUCTIONS.md](INSTRUCTIONS.md): pre-workshop installation steps (15 minutes, please do this before you arrive)
 - [SCHEDULE.md](SCHEDULE.md): the full-day program and the detailed agenda of the hands-on session
-- [slides/](slides/README.md): slides of all talks, added during and after the workshop
 - [discussion/](discussion/README.md): agenda and outcomes of the community discussion on shared TEA standards
 - [READING_MATERIAL.md](READING_MATERIAL.md): optional background reading
 - [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-workshop assignment
@@ -66,7 +65,6 @@ If you are completely new to Python, we recommend spending one or two hours on a
   - `05_case_study_hydrogen.ipynb`: Exercise 5, capstone, steam methane reforming vs. water electrolysis
   - `06_json_and_cli.ipynb`: Exercise 6, the JSON configuration workflow and command-line interface
   - `assets/`: JSON configuration files used in Exercise 6
-- [slides/](slides/README.md): slides of the lectures, the hands-on introduction, and the industry talk
 - [discussion/](discussion/README.md): agenda, notes, and outcomes of the community discussion
 - `_images/`: figures used in the README and notebooks
 
@@ -86,7 +84,7 @@ No data download is needed. Everything used in the session is either bundled in 
 
 ## No Installation? Use Google Colab
 
-Every notebook can also be opened in Google Colab, where the first cell installs OpenPyTEA for you. Use the **Open in Colab** badge at the top of each notebook, or open a notebook directly from https://colab.research.google.com/github/pbtamarona/openpytea-workshop/. A local installation is still recommended so that you know how to set up and use OpenPyTEA after the workshop.
+Every notebook can also be opened in Google Colab, where the first cell installs OpenPyTEA for you. Use the **Open in Colab** badge at the top of each notebook, or open a notebook directly from https://colab.research.google.com/github/pbtamarona/openpytea_workshop/. A local installation is still recommended so that you know how to set up and use OpenPyTEA after the workshop.
 
 ## Software
 
@@ -108,7 +106,7 @@ See [INSTRUCTIONS.md](INSTRUCTIONS.md) for the complete steps.
 ## Workshop Information
 
 - **Date:** Friday, November 6, 2026, 09:30 to 18:00
-- **Hands-on session:** 11:45 - 12:30 and 13:30 - 14:45
+- **Hands-on session:** 11:45 - 12:45 and 13:45 - 14:45
 - **Location:** Lecture Hall B - Isaac Newton, Faculty of Mechanical Engineering, TU Delft (see [Venue and Directions](#venue-and-directions))
 - **Bring:** your own laptop, with the software from [INSTRUCTIONS.md](INSTRUCTIONS.md) installed
 <!-- - **Registration:** [aanmelder.nl/openpytea2026](https://aanmelder.nl/openpytea2026) (closes October 15, 2026) -->

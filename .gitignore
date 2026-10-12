@@ -14,7 +14,7 @@ env/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 
-# Outputs written by the notebooks (PDF slides under slides/ are tracked)
+# Outputs written by the notebooks
 notebooks/outputs/
 notebooks/**/outputs/
 notebooks/**/*.pdf
@@ -33,3 +33,6 @@ Thumbs.db
 
 # Local-only notebook generator (kept out of the online repository)
 tools/
+
+# Notebooks with solutions, for the printed handouts only (kept out of the online repository)
+notebooks-solutions/

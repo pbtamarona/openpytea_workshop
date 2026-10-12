@@ -21,7 +21,7 @@ If you get stuck, contact: `P.B.Tamarona@tudelft.nl`
 
 ## Option 0: no installation (Google Colab)
 
-If you cannot install software on your laptop, you can run every notebook in Google Colab with a Google account. Open https://colab.research.google.com/github/pbtamarona/openpytea-workshop/ and pick a notebook, or use the **Open in Colab** badge at the top of each notebook. The first code cell installs OpenPyTEA in the Colab session. Nothing else is needed.
+If you cannot install software on your laptop, you can run every notebook in Google Colab with a Google account. Open https://colab.research.google.com/github/pbtamarona/openpytea_workshop/ and pick a notebook, or use the **Open in Colab** badge at the top of each notebook. The first code cell installs OpenPyTEA in the Colab session. Nothing else is needed.
 
 **We still recommend a local installation so that you can keep using OpenPyTEA on your own projects afterwards.**
 
@@ -46,19 +46,19 @@ If you see `Python 3.10.x` or higher, skip to step 2. Otherwise, install Python:
 
 ## 2) Download this repository
 
-Option A (no Git): on the GitHub page, click **Code**, then **Download ZIP**, and unzip it somewhere convenient, for example `Documents/openpytea-workshop`.
+Option A (no Git): on the GitHub page, click **Code**, then **Download ZIP**, and unzip it somewhere convenient, for example `Documents/openpytea_workshop`.
 
 Option B (Git): run the following in a terminal (`Terminal` on macOS/Linux, `PowerShell` on Windows):
 
 ```bash
 cd Documents
-git clone https://github.com/pbtamarona/openpytea-workshop.git
-cd openpytea-workshop
+git clone https://github.com/pbtamarona/openpytea_workshop.git
+cd openpytea_workshop
 ```
 
 ## 3) Create an environment and install OpenPyTEA
 
-Run the commands below in a terminal, PowerShell, or Miniforge Prompt window, from the repository root (the `openpytea-workshop` folder containing `INSTRUCTIONS.md`). Keep this window open: steps 4 and 5 use it too.
+Run the commands below in a terminal, PowerShell, or Miniforge Prompt window, from the repository root (the `openpytea_workshop` folder containing `INSTRUCTIONS.md`). Keep this window open: steps 4 and 5 use it too.
 
 ### 3a) Create and activate an empty environment
 
@@ -125,7 +125,7 @@ python -c "import openpytea; print('OpenPyTEA', openpytea.__version__)"
 openpytea --help
 ```
 
-The first command prints the installed version (3.0.0 or newer). The second prints the command-line help.
+The first command prints the installed version (3.1.0 or newer). The second prints the command-line help.
 
 ## 5) Launch Jupyter Lab and run the setup notebook
 
@@ -153,7 +153,7 @@ If you already work in a code editor with notebook support, such as VS Code, Cur
 Keep step 3c: installing Jupyter Lab also installs `ipykernel`, the package editors use to run notebook cells. If you are sure you will never use Jupyter Lab, `pip install ipykernel` is enough instead.
 
 1. **Enable notebook support.** In VS Code and editors built on it (Cursor, Windsurf), install the **Python** and **Jupyter** extensions from the Extensions view. PyCharm supports notebooks out of the box from version 2025.1; older Community editions cannot run notebooks.
-2. **Open the repository folder** as your project (usually **File**, then **Open Folder** or **Open**), and choose the `openpytea-workshop` folder.
+2. **Open the repository folder** as your project (usually **File**, then **Open Folder** or **Open**), and choose the `openpytea_workshop` folder.
 3. **Open** `notebooks/00_setup_check.ipynb`.
 4. **Select the workshop environment** as the notebook kernel or project interpreter. Look for **Select Kernel** in the top-right corner of the notebook (VS Code-based editors) or the **Python Interpreter** setting (PyCharm), and pick `.venv-openpytea` (Route A) or `openpytea-ws` (Route B). If it is not listed, point the editor to the Python executable of the environment:
    - Route A: `.venv-openpytea/Scripts/python.exe` (Windows) or `.venv-openpytea/bin/python` (macOS, Linux), inside the repository folder
@@ -179,7 +179,9 @@ If Git refuses because you have edited a notebook we changed, copy your edited n
 
 ## 8) If something fails
 
-Send an email to `P.B.Tamarona@tudelft.nl` with:
+If `pip install` fails behind a proxy or firewall (perhaps due to company policy), use Google Colab instead (see [Option 0](#option-0-no-installation-google-colab)).
+
+For anything else, send an email to `P.B.Tamarona@tudelft.nl` with:
 
 - Your operating system (Windows, macOS Intel, macOS Apple Silicon, Linux)
 - The route you used (venv/pip, conda, or Colab) and, if you use one, your code editor

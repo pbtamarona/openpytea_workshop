@@ -116,7 +116,7 @@
     }
   ],
   "plant": {
-    "plant_name": "Steam methane reforming",
+    "plant_name": "Steam reforming",
     "process_type": "Fluids",
     "country": "United States",
     "region": "Gulf Coast",
