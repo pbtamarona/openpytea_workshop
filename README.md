@@ -25,7 +25,7 @@ Each exercise is one Jupyter notebook with a short demo, core tasks, and bonus t
 - [INSTRUCTIONS.md](INSTRUCTIONS.md): pre-workshop installation steps (15 minutes, please do this before you arrive)
 - [SCHEDULE.md](SCHEDULE.md): the full-day program and the detailed agenda of the hands-on session
 - [READING_MATERIAL.md](READING_MATERIAL.md): optional background reading
-- `HOME_ASSIGNMENT.md`: optional post-workshop assignment *(available from October 30, one week before the workshop)*
+- `HOME_ASSIGNMENT.md`: optional post-workshop assignment *(available from Oct 30, one week before the workshop)*
 - [OpenPyTEA documentation](https://openpytea.readthedocs.io)
 - [OpenPyTEA on GitHub](https://github.com/pbtamarona/OpenPyTEA): source code and GUI installers
 - [OpenPyTEA paper](https://doi.org/10.1016/j.softx.2026.102816): Tamarona, Vlugt & Ramdin (2026), SoftwareX 35, 102816
@@ -59,12 +59,12 @@ If you are completely new to Python, we recommend spending one or two hours on a
 
 - [notebooks/](notebooks/README.md): the workshop notebooks; the exercise number is the notebook number
   - `00_setup_check.ipynb`: run before the workshop to verify your installation
-  - `01_equipment_costing.ipynb`: Exercise 1, equipment cost estimation *(available from October 30, one week before the workshop)*
-  - `02_building_a_plant.ipynb`: Exercise 2, plant configuration, CAPEX, OPEX, and profitability metrics *(available from October 30, one week before the workshop)*
-  - `03_cost_breakdowns_and_sensitivity.ipynb`: Exercise 3, breakdown charts, cash flow, sensitivity, and tornado plots *(available from October 30, one week before the workshop)*
-  - `04_monte_carlo_uncertainty.ipynb`: Exercise 4, uncertainty distributions and Monte Carlo simulation *(available from October 30, one week before the workshop)*
-  - `05_case_study_hydrogen.ipynb`: Exercise 5, capstone, steam methane reforming vs. water electrolysis *(available from October 30, one week before the workshop)*
-  - `06_json_and_cli.ipynb`: Exercise 6, the JSON configuration workflow and command-line interface *(available from October 30, one week before the workshop)*
+  - `01_equipment_costing.ipynb`: Exercise 1, equipment cost estimation *(available from Oct 30, one week before the workshop)*
+  - `02_building_a_plant.ipynb`: Exercise 2, plant configuration, CAPEX, OPEX, and profitability metrics *(available from Oct 30, one week before the workshop)*
+  - `03_cost_breakdowns_and_sensitivity.ipynb`: Exercise 3, breakdown charts, cash flow, sensitivity, and tornado plots *(available from Oct 30, one week before the workshop)*
+  - `04_monte_carlo_uncertainty.ipynb`: Exercise 4, uncertainty distributions and Monte Carlo simulation *(available from Oct 30, one week before the workshop)*
+  - `05_case_study_hydrogen.ipynb`: Exercise 5, capstone, steam methane reforming vs. water electrolysis *(available from Oct 30, one week before the workshop)*
+  - `06_json_and_cli.ipynb`: Exercise 6, the JSON configuration workflow and command-line interface *(available from Oct 30, one week before the workshop)*
   - `assets/`: JSON configuration files used in Exercise 6
 - `_images/`: figures used in the README and notebooks
 
