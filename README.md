@@ -7,9 +7,9 @@
 
 ## Overview
 
-Welcome! This repository holds all material of the one-day workshop **Open-Science Techno-Economic Assessment with OpenPyTEA: From Process Design to Economic Insights**: notes from the community discussion and the core **hands-on session with OpenPyTEA**.
+Welcome! This repository holds all material of the one-day workshop **Open-Science Techno-Economic Assessment with OpenPyTEA: From Process Design to Economic Insights**, centred on the **hands-on session with OpenPyTEA**.
 
-The hands-on session (11:35 - 12:40 and 13:40 - 14:45, about two hours in total) opens with a short presentation on why we built OpenPyTEA. You then build a complete techno-economic assessment (TEA) in Python with the open-source [OpenPyTEA](https://github.com/pbtamarona/OpenPyTEA) toolkit, in six exercises:
+The hands-on session (11:35 - 12:40 and 13:40 - 15:00, 2.5 hours in total) opens with a short presentation on why we built OpenPyTEA. You then build a complete techno-economic assessment (TEA) in Python with the open-source [OpenPyTEA](https://github.com/pbtamarona/OpenPyTEA) toolkit, in six exercises:
 
 - Equipment cost estimation from cost correlations and vendor quotes
 - Plant-level CAPEX, OPEX, cash flow, and profitability metrics (NPV, IRR, ROI, payback time, levelized cost)
@@ -24,10 +24,11 @@ Each exercise is one Jupyter notebook with a short demo, core tasks, and bonus t
 
 - [INSTRUCTIONS.md](INSTRUCTIONS.md): pre-workshop installation steps (15 minutes, please do this before you arrive)
 - [SCHEDULE.md](SCHEDULE.md): the full-day program and the detailed agenda of the hands-on session
-- [discussion/](discussion/README.md): agenda and outcomes of the community discussion on shared TEA standards
 - [READING_MATERIAL.md](READING_MATERIAL.md): optional background reading
 - `HOME_ASSIGNMENT.md`: optional post-workshop assignment *(available from October 30, one week before the workshop)*
 - [OpenPyTEA documentation](https://openpytea.readthedocs.io)
+- [OpenPyTEA on GitHub](https://github.com/pbtamarona/OpenPyTEA): source code and GUI installers
+- [OpenPyTEA paper](https://doi.org/10.1016/j.softx.2026.102816): Tamarona, Vlugt & Ramdin (2026), SoftwareX 35, 102816
 
 ## Learning Outcomes
 
@@ -65,7 +66,6 @@ If you are completely new to Python, we recommend spending one or two hours on a
   - `05_case_study_hydrogen.ipynb`: Exercise 5, capstone, steam methane reforming vs. water electrolysis *(available from October 30, one week before the workshop)*
   - `06_json_and_cli.ipynb`: Exercise 6, the JSON configuration workflow and command-line interface *(available from October 30, one week before the workshop)*
   - `assets/`: JSON configuration files used in Exercise 6
-- [discussion/](discussion/README.md): agenda, notes, and outcomes of the community discussion
 - `_images/`: figures used in the README and notebooks
 
 ## Recommended Workflow
