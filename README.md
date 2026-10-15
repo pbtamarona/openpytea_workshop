@@ -108,6 +108,7 @@ See [INSTRUCTIONS.md](INSTRUCTIONS.md) for the complete steps.
 - **Date:** Friday, November 6, 2026, 09:30 to 18:00
 - **Hands-on session:** 11:35 - 12:40 and 13:40 - 14:45 (+15 mins of discussion)
 - **Location:** Lecture Hall B - Isaac Newton, Faculty of Mechanical Engineering, TU Delft (see [Venue and Directions](#venue-and-directions))
+- **Social drinks and networking:** from 17:00 at [Cafe Labs](https://cafelabs.nl/), within walking distance of the venue
 - **Bring:** your own laptop, with the software from [INSTRUCTIONS.md](INSTRUCTIONS.md) installed
 <!-- - **Registration:** [aanmelder.nl/openpytea2026](https://aanmelder.nl/openpytea2026) (closes October 15, 2026) -->
 - **Package repository:** https://github.com/pbtamarona/OpenPyTEA

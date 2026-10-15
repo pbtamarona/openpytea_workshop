@@ -21,7 +21,8 @@ The day combines lectures, the hands-on session, an industry perspective, and an
 | 15:00 - 15:15 | Coffee break | |
 | 15:15 - 16:00 | Multi-Agent Systems for Process Design | Artur Schweidtmann, TU Delft |
 | 16:00 - 16:45 | Industry talk: feasibility assessment in practice | Arnoud Higler, Shell |
-| 16:45 - 18:00 | Closing, social drinks, and networking | |
+| 16:45 - 17:00 | Closing remarks | Mahinder Ramdin, TU Delft |
+| 16:45 - 17:00 | Social drinks, and networking | at [Cafe Labs](https://cafelabs.nl/) |
 
 ## Hands-on session with OpenPyTEA
 
