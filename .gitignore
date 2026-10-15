@@ -39,3 +39,6 @@ notebooks-solutions/
 
 # Hands-on notebooks 01-06, kept local until they are released
 notebooks/0[1-6]_*.ipynb
+
+# Home assignment, kept local for now
+HOME_ASSIGNMENT.md
