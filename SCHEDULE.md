@@ -25,13 +25,13 @@ The day combines lectures, the hands-on session, an industry perspective, and an
 
 ## Hands-on session with OpenPyTEA
 
-The hands-on session runs in two parts around lunch:
+The hands-on session runs in two parts around lunch, followed by a 15-minute buffer:
 
 | Part | Time | Duration |
 |---|---|---|
 | Part 1 | 11:35 - 12:40 | 65 min |
 | Lunch | 12:40 - 13:40 | |
 | Part 2 | 13:40 - 14:45 | 65 min |
-| Discussion | 14:45 - 15:00 | 15 min |
+| Buffer | 14:45 - 15:00 | 15 min |
 
-It consists of six exercises, one notebook each. The exercise number is the notebook number. Inside a notebook, tasks are numbered per exercise (Task 1.1, Task 1.2, ...). Tasks marked **bonus** are for participants who finish early. Solutions to every task are in the printed handouts.
+It consists of six exercises, one notebook each. The exercise number is the notebook number. Inside a notebook, tasks are numbered per exercise (Task 1.1, Task 1.2, ...). Tasks marked **bonus** are for participants who finish early. Solutions to every task are in the printed handouts. The last 15 minutes are a buffer: we use them to finish the notebooks, and if time allows, for a short open discussion on what makes a TEA transparent and reproducible.
