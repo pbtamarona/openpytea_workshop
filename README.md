@@ -18,7 +18,7 @@ The hands-on session (11:35 - 12:40 and 13:40 - 15:00, 2.5 hours in total) opens
 - A capstone case study comparing two hydrogen production pathways
 - The JSON configuration workflow and command-line interface, and a demonstration of the OpenPyTEA graphical user interface
 
-Each exercise is one Jupyter notebook with a short demo, core tasks, and bonus tasks for fast participants. Solutions are in the printed handouts you receive at the workshop. All material stays available after the workshop.
+Each exercise is one Jupyter notebook with a short demo, core tasks, and bonus tasks for fast participants. **The exercise notebooks will be uploaded to this repository one week before the workshop, on October 30, 2026. Solutions are in the printed handouts you receive at the workshop.** All material stays available after the workshop.
 
 ## Quick Links
 
@@ -110,9 +110,9 @@ See [INSTRUCTIONS.md](INSTRUCTIONS.md) for the complete steps.
 - **Location:** Lecture Hall B - Isaac Newton, Faculty of Mechanical Engineering, TU Delft (see [Venue and Directions](#venue-and-directions))
 - **Social drinks and networking:** from 17:00 at [Cafe Labs](https://cafelabs.nl/), within walking distance of the venue
 - **Bring:** your own laptop, with the software from [INSTRUCTIONS.md](INSTRUCTIONS.md) installed
-<!-- - **Registration:** [aanmelder.nl/openpytea2026](https://aanmelder.nl/openpytea2026) (closes October 15, 2026) -->
 - **Package repository:** https://github.com/pbtamarona/OpenPyTEA
 - **Documentation:** https://openpytea.readthedocs.io
+<!-- - **Registration:** [aanmelder.nl/openpytea2026](https://aanmelder.nl/openpytea2026) (closes October 15, 2026) -->
 
 <!-- <p align="center">
   <img src="_images/workshop-flyer.jpg" alt="Open-Science Techno-Economic Assessment with OpenPyTEA" width="700"/>
