@@ -25,6 +25,8 @@ Other classic chemical engineering textbooks cover the same topics well, and sev
 - *Plant Design and Economics for Chemical Engineers*, 5th ed. (Peters, Timmerhaus & West, 2003)
 - *Chemical Engineering Process Design and Economics*, 2nd ed. (Ulrich & Vasudevan, 2004)
 
-## Uncertainty in TEA
+## Best practices in TEA
 
-6. Van der Spek, M., Roussanaly, S., & Rubin, E.S. (2019). Best practices and recent advances in CCS cost engineering and economic analysis. *International Journal of Greenhouse Gas Control, 83*, 91-104. https://doi.org/10.1016/j.ijggc.2019.02.006. 🔒 **Paid** The journal version is behind a paywall, but the authors' accepted manuscript is free in an open repository: [free author version](http://hdl.handle.net/11250/2598150). Description: a practical discussion of why sensitivity and Monte Carlo analysis belong in every TEA, and how to report them. Useful background for Exercises 3 and 4. 🔓 **Free** (author version)
+6. Van der Spek, M., Roussanaly, S., & Rubin, E.S. (2019). Best practices and recent advances in CCS cost engineering and economic analysis. *International Journal of Greenhouse Gas Control, 83*, 91-104. https://doi.org/10.1016/j.ijggc.2019.02.006. 🔒 **Paid** The journal version is behind a paywall, but the authors' accepted manuscript is free in an open repository: [free author version](http://hdl.handle.net/11250/2598150). Description: good practice in cost engineering, illustrated with carbon capture but applicable to any TEA: cost estimation methods, transparent assumptions, common pitfalls, and uncertainty analysis. Useful background for Exercises 2 to 5. 🔓 **Free** (author version)
+
+7. Poddar, T.K., & Scown, C.D. (2025). Technoeconomic analysis for near-term scale-up of bioprocesses. *Current Opinion in Biotechnology, 92*, 103258. https://doi.org/10.1016/j.copbio.2025.103258. Description: a short review of why standard nth-plant assumptions underestimate the cost of a first-of-a-kind plant, how the RAND method corrects for this, and which economic metrics matter at each stage of scale-up. Illustrated with bioprocesses but relevant to any emerging technology. Useful background for Exercise 2. 🔓 **Free**

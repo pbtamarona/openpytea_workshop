@@ -24,9 +24,10 @@ Each exercise is one Jupyter notebook with a short demo, core tasks, and bonus t
 
 - [INSTRUCTIONS.md](INSTRUCTIONS.md): pre-workshop installation steps (15 minutes, please do this before you arrive)
 - [SCHEDULE.md](SCHEDULE.md): the full-day program and the detailed agenda of the hands-on session
+- [notebooks/](notebooks/): the exercise notebooks of the hands-on session *(setup check available now; exercises 01 to 06 available from Oct 30)*
 - [READING_MATERIAL.md](READING_MATERIAL.md): optional background reading
-- `HOME_ASSIGNMENT.md`: optional post-workshop assignment *(available from Oct 30, one week before the workshop)*
-- [OpenPyTEA documentation](https://openpytea.readthedocs.io)
+- `HOME_ASSIGNMENT.md`: optional post-workshop assignment *(available from Oct 30)*
+- [OpenPyTEA documentation](https://openpytea.readthedocs.io): user guide, tutorials, and API reference
 - [OpenPyTEA on GitHub](https://github.com/pbtamarona/OpenPyTEA): source code and GUI installers
 - [OpenPyTEA paper](https://doi.org/10.1016/j.softx.2026.102816): Tamarona, Vlugt & Ramdin (2026), SoftwareX 35, 102816
 
