@@ -30,7 +30,7 @@ If you cannot install software on your laptop, you can run every notebook in Goo
 Check whether Python 3.10 or newer is already available. Open a terminal (`Terminal` on macOS or Linux, `PowerShell` on Windows) and run:
 
 ```bash
-python --version
+python3 --version
 ```
 
 On Windows, if that fails, also try:
