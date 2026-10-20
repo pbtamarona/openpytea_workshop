@@ -60,7 +60,7 @@ If you are completely new to Python, we recommend spending one or two hours on a
 
 - [notebooks/](notebooks/README.md): the workshop notebooks; the exercise number is the notebook number
   - `00_setup_check.ipynb`: run before the workshop to verify your installation
-  - `01_equipment_costing.ipynb`: Exercise 1, equipment cost estimation *(available from Oct 30, one week before the workshop)*
+  - `01_equipment_costing.ipynb`: Exercise 1, OpenPyTEA workflow and equipment cost estimation *(available from Oct 30, one week before the workshop)*
   - `02_building_a_plant.ipynb`: Exercise 2, plant configuration, CAPEX, OPEX, and profitability metrics *(available from Oct 30, one week before the workshop)*
   - `03_cost_breakdowns_and_sensitivity.ipynb`: Exercise 3, breakdown charts, cash flow, sensitivity, and tornado plots *(available from Oct 30, one week before the workshop)*
   - `04_monte_carlo_uncertainty.ipynb`: Exercise 4, uncertainty distributions and Monte Carlo simulation *(available from Oct 30, one week before the workshop)*
