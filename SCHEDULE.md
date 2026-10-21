@@ -35,4 +35,4 @@ The hands-on session runs in two parts around lunch, followed by a 15-minute buf
 | Part 2 | 13:40 - 14:45 | 65 min |
 | Buffer | 14:45 - 15:00 | 15 min |
 
-It consists of six exercises, one notebook each. The exercise number is the notebook number. Inside a notebook, tasks are numbered per exercise (Task 1.1, Task 1.2, ...). Tasks marked **bonus** are for participants who finish early. Solutions to every task are in the printed handouts. The last 15 minutes are a buffer: we use them to finish the notebooks, and if time allows, for a short open discussion on what makes a TEA transparent and reproducible.
+It consists of six notebooks. Inside a notebook, tasks are numbered per notebook (Task 1.1, Task 1.2, ...). Tasks marked **bonus** are for participants who finish early. Solutions to every task are in the printed handouts. The last 15 minutes are a buffer: we use them to finish the notebooks, and if time allows, for a short open discussion on what makes a TEA transparent and reproducible.

@@ -110,7 +110,7 @@ Keep the quotes around `"openpytea[ipython]"`. Without them, some shells (for ex
 
 ### 3c) Install Jupyter Lab
 
-The `ipython` extra lets OpenPyTEA work well inside notebooks, but it does not install the notebook application itself. The workshop exercises are Jupyter notebooks, so install Jupyter Lab as well:
+The `ipython` extra lets OpenPyTEA work well inside notebooks, but it does not install the notebook application itself. The workshop material is a set of Jupyter notebooks, so install Jupyter Lab as well:
 
 ```bash
 pip install jupyterlab
@@ -165,7 +165,7 @@ Most editors also have a built-in terminal (often **Terminal**, then **New Termi
 Two things to check if something goes wrong:
 
 - **Wrong environment.** If `import openpytea` fails, the notebook is using a different Python. Select the workshop environment again. The first cell of the setup notebook prints which Python it is using; the path should contain `.venv-openpytea` or `openpytea-ws`.
-- **Working folder.** Each notebook should run from its own `notebooks/` folder, which is the default in most editors. Exercise 6 reads and writes files relative to that folder. The setup notebook prints the current folder so you can check.
+- **Working folder.** Each notebook should run from its own `notebooks/` folder, which is the default in most editors. Notebook 6 reads and writes files relative to that folder. The setup notebook prints the current folder so you can check.
 
 ## 7) Updating the repository during the workshop
 

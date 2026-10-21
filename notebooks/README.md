@@ -18,7 +18,7 @@ Task cells start with `# YOUR CODE HERE`. Solutions are not included in this rep
 
 ## Files
 
-- `assets/smr_hydrogen.json`: combined OpenPyTEA configuration of the steam methane reforming plant (Exercise 6)
-- `assets/we_hydrogen.json`: combined configuration of the water electrolysis plant (Exercise 6)
+- `assets/smr_hydrogen.json`: combined OpenPyTEA configuration of the steam methane reforming plant (Notebook 6)
+- `assets/we_hydrogen.json`: combined configuration of the water electrolysis plant (Notebook 6)
 
-On Google Colab, Exercise 6 downloads these files automatically when they are not present. Exercises 3 and 6 write files to the current folder and to `outputs/`.
+On Google Colab, Notebook 6 downloads these files automatically when they are not present. Notebooks 3 and 6 write files to the current folder and to `outputs/`.
