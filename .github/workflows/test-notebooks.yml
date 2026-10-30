@@ -43,8 +43,29 @@ jobs:
           cd notebooks
           for nb in 0*.ipynb; do
             echo "::group::$nb"
+            # Task cells are empty (# YOUR CODE HERE), so later cells that use
+            # their results raise NameError; keep running and check below
             jupyter nbconvert --to notebook --execute "$nb" \
-              --ExecutePreprocessor.timeout=900 \
-              --output-dir /tmp/executed || exit 1
+              --ExecutePreprocessor.timeout=900 --allow-errors \
+              --output-dir ../executed || exit 1
             echo "::endgroup::"
           done
+
+      - name: Check notebooks for unexpected errors
+        shell: bash
+        run: |
+          python - <<'EOF'
+          import glob, json, sys
+          failed = False
+          for path in sorted(glob.glob("executed/0*.ipynb")):
+              cells = json.load(open(path, encoding="utf-8"))["cells"]
+              for i, cell in enumerate(cells):
+                  for out in cell.get("outputs", []):
+                      if out["output_type"] != "error":
+                          continue
+                      expected = out["ename"] == "NameError"
+                      print(f"{'expected' if expected else 'ERROR'}: {path} cell {i}: "
+                            f"{out['ename']}: {out['evalue']}")
+                      failed |= not expected
+          sys.exit(1 if failed else 0)
+          EOF
