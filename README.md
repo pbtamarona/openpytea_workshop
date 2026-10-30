@@ -18,13 +18,13 @@ The hands-on session (11:35 - 12:40 and 13:40 - 15:00, 2.5 hours in total) opens
 - A capstone case study comparing two hydrogen production pathways
 - The JSON configuration workflow and command-line interface, and a demonstration of the OpenPyTEA graphical user interface
 
-Each notebook has a short demo, core tasks, and bonus tasks for fast participants. **The notebooks will be uploaded to this repository one week before the workshop, on October 30, 2026. Solutions are in the printed handouts you receive at the workshop.** All material stays available after the workshop.
+Each notebook has a short demo, core tasks, and bonus tasks for fast participants. **Solutions are in the printed handouts you receive at the workshop.** All material stays available after the workshop.
 
 ## Quick Links
 
 - [INSTRUCTIONS.md](INSTRUCTIONS.md): pre-workshop installation steps (15 minutes, please do this before you arrive)
 - [SCHEDULE.md](SCHEDULE.md): the full-day program and the detailed agenda of the hands-on session
-- [notebooks/](notebooks/): the notebooks of the hands-on session *(setup check available now; notebooks 01 to 06 available from Oct 30)*
+- [notebooks/](notebooks/): the notebooks of the hands-on session
 - [READING_MATERIAL.md](READING_MATERIAL.md): optional background reading
 - `HOME_ASSIGNMENT.md`: optional post-workshop assignment *(available from Oct 30)*
 - [OpenPyTEA documentation](https://openpytea.readthedocs.io): user guide, tutorials, and API reference
@@ -60,13 +60,13 @@ If you are completely new to Python, we recommend spending one or two hours on a
 
 - [notebooks/](notebooks/README.md): the workshop notebooks
   - `00_setup_check.ipynb`: run before the workshop to verify your installation
-  - `01_equipment_costing.ipynb`: Notebook 1, OpenPyTEA workflow and equipment cost estimation *(available from Oct 30, one week before the workshop)*
-  - `02_building_a_plant.ipynb`: Notebook 2, plant configuration, CAPEX, OPEX, and profitability metrics *(available from Oct 30, one week before the workshop)*
-  - `03_cost_breakdowns_and_sensitivity.ipynb`: Notebook 3, breakdown charts, cash flow, sensitivity, and tornado plots *(available from Oct 30, one week before the workshop)*
-  - `04_monte_carlo_uncertainty.ipynb`: Notebook 4, uncertainty distributions and Monte Carlo simulation *(available from Oct 30, one week before the workshop)*
-  - `05_case_study_hydrogen.ipynb`: Notebook 5, capstone, steam methane reforming vs. water electrolysis *(available from Oct 30, one week before the workshop)*
-  - `06_json_and_cli.ipynb`: Notebook 6, the JSON configuration workflow and command-line interface *(available from Oct 30, one week before the workshop)*
-  - `assets/`: JSON configuration files used in Notebook 6
+  - `01_equipment_costing.ipynb`: Notebook 1, OpenPyTEA workflow and equipment cost estimation
+  - `02_building_a_plant.ipynb`: Notebook 2, plant configuration, CAPEX, OPEX, and profitability metrics
+  - `03_cost_breakdowns_and_sensitivity.ipynb`: Notebook 3, breakdown charts, cash flow, sensitivity, and tornado plots
+  - `04_monte_carlo_uncertainty.ipynb`: Notebook 4, uncertainty distributions and Monte Carlo simulation
+  - `05_case_study_hydrogen.ipynb`: Notebook 5, capstone, steam methane reforming vs. water electrolysis
+  - `06_json_and_cli.ipynb`: Notebook 6, a short demo of the JSON configuration workflow that leads into the GUI demonstration
+  - `assets/`: flowsheet images and the JSON configuration files used in Notebook 6
 - `_images/`: figures used in the README and notebooks
 
 ## Recommended Workflow
