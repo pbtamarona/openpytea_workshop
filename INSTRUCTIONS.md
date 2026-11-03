@@ -181,6 +181,37 @@ If Git refuses because you have edited a notebook we changed, copy your edited n
 
 If `pip install` fails behind a proxy or firewall (perhaps due to company policy), use Google Colab instead (see [Option 0](#option-0-no-installation-google-colab)).
 
+### Installing Jupyter Lab fails on Python 3.15 (`Failed building wheel for pyyaml`)
+
+Jupyter Lab depends on `pyyaml`, which has no ready-made installer for Python 3.15 yet, so `pip` tries to build it and needs a C compiler that most laptops lack. The fix is to create the environment with Python 3.14, which can be installed next to 3.15.
+
+1. Install Python 3.14:
+   - Windows, with the Python install manager (the default download on python.org): run `py install 3.14`
+   - Windows or macOS, with the standalone installer: on https://www.python.org/downloads/, scroll to **Looking for a specific release?** and download the latest 3.14.x installer
+   - Or skip this and use Route B (conda) in step 3a, which installs its own Python 3.12
+2. In the repository folder, delete the failed environment and create a new one, naming the Python version explicitly.
+
+   Windows (`PowerShell`):
+
+   ```powershell
+   deactivate
+   Remove-Item -Recurse -Force .venv-openpytea
+   py -3.14 -m venv .venv-openpytea
+   .\.venv-openpytea\Scripts\Activate.ps1
+   ```
+
+   macOS or Linux (`Terminal`):
+
+   ```bash
+   deactivate
+   rm -rf .venv-openpytea
+   python3.14 -m venv .venv-openpytea
+   source .venv-openpytea/bin/activate
+   ```
+
+   If `deactivate` reports that it is not found, the environment was not active; continue with the next line.
+3. Check that `python --version` now shows `Python 3.14.x`, then repeat steps 3b and 3c.
+
 For anything else, send an email to `P.B.Tamarona@tudelft.nl` with:
 
 - Your operating system (Windows, macOS Intel, macOS Apple Silicon, Linux)
